@@ -73,7 +73,7 @@ namespace TheWeakestBankOfAntarctica.Utility
 
         public static bool IsUserAuthorizedToAddAdmin(string govId) {
             // It will not be always true in real world scenario
-            return true;
+            return false;
         }
 
 
