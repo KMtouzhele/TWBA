@@ -47,8 +47,10 @@ namespace TheWeakestBankOfAntarctica
             } while (key.Key != ConsoleKey.Enter);
 
             Console.WriteLine();
+            string sessionToken = AccessController.Authenticate(login, password);
+            bool isAuthenticated = AccessController.IsAuthenticated(sessionToken);
 
-            return AccessController.Login(login, password);
+            return isAuthenticated;
         }
 
 
